@@ -26,9 +26,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
   return (
     <SectionContainer>
       <BlogSEO url={`${siteMetadata.siteUrl}/${path}`} {...content} />
-
       <ScrollTopAndComment />
-
       <article>
         <div>
           <header>
@@ -38,7 +36,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                 <BlogTags tags={tags} />
                 <dl>
                   <div>
-                    <dt className="sr-only">Published on</dt>
+                    <dt className="sr-only">Publicado em</dt>
                     <BlogMeta date={date} slug={slug} readingTime={readingTime} />
                   </div>
                 </dl>
@@ -48,7 +46,9 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
 
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0">
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pb-8 pt-10 dark:prose-dark">{children}</div>
+              <div style={{ marginTop: -40 }} className="prose max-w-none pb-8 pt-10 dark:prose-dark">
+                {children}
+              </div>
             </div>
             {siteMetadata.comments && (
               <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300" id="comment">

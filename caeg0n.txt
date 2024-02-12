@@ -1,2 +1,0 @@
-nvm 18
-yarn dev
