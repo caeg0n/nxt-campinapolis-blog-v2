@@ -54,7 +54,9 @@ const TypedBios = () => {
           I love listening <Twemoji emoji="musical-keyboard" /> and rap music.
         </li> */}
         <li>
-          "Em Campinápolis, a neve nunca cai, mas na era digital, fazer isso acontecer só depende da sua criatividade."
+          "Neste blog, mergulhamos no silêncio e no vazio das relações humanas, refletindo sobre a vida em um lugar sem
+          neve, onde corações às vezes se congelam. Com análise e paixão, exploramos as sombras de nossa comunidade,
+          revelando sua brutalidade e beleza, além da chance de redenção e entendimento no caos."
         </li>
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
