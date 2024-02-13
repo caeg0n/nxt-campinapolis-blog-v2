@@ -1,10 +1,13 @@
 const ShortDescription = () => {
   return (
     <div className="mb-4 mt-4">
-      <p>I started learning to code in 2019 when I started college.</p>
-      <p>I landed my first job as a Back-end Developer in 2021.</p>
-      <p>I have a passion for JavaScript/Typescript and website development.</p>
-      <p>I started this blog to practice my skill and share my knowledge.</p>
+      <p>Em meio à tranquila paisagem de Campinápolis, uma pequena trupe digital se desdobra,</p>
+      <p>marcada pela rica herança indígena da cidade e traços de corrupção na política.</p>
+      <p>O Campinápolis-blog é uma janela para o estado atual dessa cidade,</p>
+      <p>
+        Um encontro de mentes curiosas e corações apaixonados, dedicados a explorar, questionar e a celebrar a vida
+        através dessas múltiplas lentes.
+      </p>
     </div>
   );
 };

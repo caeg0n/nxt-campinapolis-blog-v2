@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType } from 'next';
 import Snowfall from 'react-snowfall';
 import { formatDate } from 'pliny/utils/formatDate';
-// import { NewsletterForm } from 'pliny/ui/NewsletterForm';
+//import { NewsletterForm } from 'pliny/ui/NewsletterForm';
 import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer';
 import { allBlogs } from 'contentlayer/generated';
 import type { Blog } from 'contentlayer/generated';
@@ -11,7 +11,6 @@ import Tag from '@/components/Tag';
 import Link from '@/components/Link';
 import Twemoji from '@/components/Twemoji';
 import { PageSEO } from '@/components/SEO';
-import Image from '@/components/Image';
 import Greeting from '@/components/homepage/Greeting';
 import Heading from '@/components/homepage/Heading';
 import TypedBios from '@/components/homepage/TypedBios';
@@ -20,6 +19,7 @@ import BlogLinks from '@/components/homepage/BlogLinks';
 import SpotifyNowPlaying from '@/components/homepage/SpotifyNowPlaying';
 import PopularTags from '@/components/homepage/PopularTags';
 import Avatar from '@/components/homepage/Avatar';
+import Image from '@/components/Image';
 
 const MAX_DISPLAY = 3;
 
@@ -129,7 +129,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link href="/blog" className="text-primary hover:text-sky-600 dark:hover:text-sky-400" aria-label="All posts">
-            All Posts &rarr;
+            Todas as postagens &rarr;
           </Link>
         </div>
       )}

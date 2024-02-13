@@ -35,7 +35,12 @@ export default function BlogPage({
   return (
     <>
       <PageSEO title={`Blog - ${headerTitle} - ${title}`} description={description} />
-      <ListLayout posts={posts} initialDisplayPosts={initialDisplayPosts} pagination={pagination} title="All Posts" />
+      <ListLayout
+        posts={posts}
+        initialDisplayPosts={initialDisplayPosts}
+        pagination={pagination}
+        title="Todos os Posts"
+      />
     </>
   );
 }
