@@ -54,7 +54,7 @@ const TypedBios = () => {
           I love listening <Twemoji emoji="musical-keyboard" /> and rap music.
         </li> */}
         <li>
-          I love playing video game <Twemoji emoji="video-game" />, LoL is my favorite one.
+          "Em Campinápolis, a neve nunca cai, mas na era digital, fazer isso acontecer só depende da sua criatividade."
         </li>
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />

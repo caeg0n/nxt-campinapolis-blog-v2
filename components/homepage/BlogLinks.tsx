@@ -6,29 +6,29 @@ const BlogLinks = () => {
     <div className="flex justify-between ">
       <div className="flex flex-col space-y-1.5">
         <Link href="/blog" className="hover:underline">
-          <Twemoji emoji="memo" />
+          <Twemoji emoji="cyclone" />
           <span data-umami-event="home-link-blog" className="ml-1.5">
-            My writings
+            Carlos
           </span>
         </Link>
         <Link href="/projects" className="hover:underline">
-          <Twemoji emoji="hammer-and-wrench" />
+          <Twemoji emoji="cyclone" />
           <span data-umami-event="home-link-projects" className="ml-1.5">
-            What have I built?
+            Misael
           </span>
         </Link>
       </div>
       <div className="flex flex-col space-y-1.5">
         <Link href="/about" className="hover:underline">
-          <Twemoji emoji="face-with-monocle" />
+          <Twemoji emoji="cyclone" />
           <span data-umami-event="home-link-about" className="ml-1.5">
-            More about me and myself
+            Aulismar
           </span>
         </Link>
         <Link href="/resume" className="hover:underline">
-          <Twemoji emoji="briefcase" />
+          <Twemoji emoji="cyclone" />
           <span data-umami-event="home-link-resume" className="ml-1.5">
-            My career
+            Uender
           </span>
         </Link>
       </div>
