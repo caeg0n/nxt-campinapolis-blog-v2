@@ -8,7 +8,7 @@ const Greeting = () => {
 
   return (
     <div className={className}>
-      <span className="font-bold">Um Caleidoscópio de Ciência, Arte, Política e Melodias.</span>
+      <span className="font-bold">Um caleidoscópio de ciência, arte, política e melodias.</span>
     </div>
   );
 };
