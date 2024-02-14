@@ -4,6 +4,7 @@ import { PageSEO } from '@/components/SEO';
 import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer';
 import { InferGetStaticPropsType } from 'next';
 import { allBlogs } from 'contentlayer/generated';
+import { useRouter } from 'next/router';
 import type { Blog } from 'contentlayer/generated';
 
 export const POSTS_PER_PAGE = 5;
@@ -30,6 +31,9 @@ export default function BlogPage({
   initialDisplayPosts,
   pagination,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const router = useRouter();
+  const { author } = router.query;
+
   const { title, headerTitle, description } = siteMetadata;
 
   return (
@@ -39,7 +43,8 @@ export default function BlogPage({
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="Todos os Posts"
+        title="Todas as Postagens"
+        author={author as string}
       />
     </>
   );

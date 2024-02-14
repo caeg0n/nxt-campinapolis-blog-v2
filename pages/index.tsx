@@ -1,7 +1,6 @@
 import { InferGetStaticPropsType } from 'next';
 import Snowfall from 'react-snowfall';
 import { formatDate } from 'pliny/utils/formatDate';
-//import { NewsletterForm } from 'pliny/ui/NewsletterForm';
 import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer';
 import { allBlogs } from 'contentlayer/generated';
 import type { Blog } from 'contentlayer/generated';
@@ -16,10 +15,11 @@ import Heading from '@/components/homepage/Heading';
 import TypedBios from '@/components/homepage/TypedBios';
 import ShortDescription from '@/components/homepage/ShortDescription';
 import BlogLinks from '@/components/homepage/BlogLinks';
-import SpotifyNowPlaying from '@/components/homepage/SpotifyNowPlaying';
 import PopularTags from '@/components/homepage/PopularTags';
 import Avatar from '@/components/homepage/Avatar';
 import Image from '@/components/Image';
+import SpotifyNowPlaying from '@/components/homepage/SpotifyNowPlaying';
+//import { NewsletterForm } from 'pliny/ui/NewsletterForm';
 
 const MAX_DISPLAY = 3;
 

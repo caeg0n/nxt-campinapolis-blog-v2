@@ -16,6 +16,7 @@ interface ListLayoutProps {
   title: string;
   initialDisplayPosts?: CoreContent<Blog>[];
   pagination?: PaginationProps;
+  author?: string;
 }
 
 function Pagination({ totalPages, currentPage }: PaginationProps) {
@@ -55,10 +56,10 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
   );
 }
 
-export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }: ListLayoutProps) {
-  const [searchValue, setSearchValue] = useState('');
+export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination, author }: ListLayoutProps) {
+  const [searchValue, setSearchValue] = useState(author || '');
   const filteredBlogPosts = posts.filter((post) => {
-    const searchContent = post.title + post.summary + post.tags.join(' ');
+    const searchContent = post.authors[0] + post.title + post.summary + post.tags.join(' ');
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 

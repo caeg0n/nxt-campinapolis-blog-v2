@@ -5,13 +5,13 @@ const BlogLinks = () => {
   return (
     <div className="flex justify-between ">
       <div className="flex flex-col space-y-1.5">
-        <Link href="/blog" className="hover:underline">
+        <Link href="/blog?author=carlos" className="hover:underline">
           <Twemoji emoji="cyclone" />
           <span data-umami-event="home-link-blog" className="ml-1.5">
-            Carlos
+            Carlos Eduardo
           </span>
         </Link>
-        <Link href="/projects" className="hover:underline">
+        <Link href="/blog?author=misael" className="hover:underline">
           <Twemoji emoji="cyclone" />
           <span data-umami-event="home-link-projects" className="ml-1.5">
             Misael
@@ -19,13 +19,13 @@ const BlogLinks = () => {
         </Link>
       </div>
       <div className="flex flex-col space-y-1.5">
-        <Link href="/about" className="hover:underline">
+        <Link href="/blog?author=aulismar" className="hover:underline">
           <Twemoji emoji="cyclone" />
           <span data-umami-event="home-link-about" className="ml-1.5">
-            Aulismar
+            Aulismar Alves
           </span>
         </Link>
-        <Link href="/resume" className="hover:underline">
+        <Link href="/blog?author=uender" className="hover:underline">
           <Twemoji emoji="cyclone" />
           <span data-umami-event="home-link-resume" className="ml-1.5">
             Uender
