@@ -8,7 +8,10 @@ const Greeting = () => {
 
   return (
     <div className={className}>
+      HEAD
       <span className="font-bold">Um caleidoscópio de ciência, arte, política e melodias.</span>
+      Hello, folks! <span className="font-bold">Discover my stories and creative ideas.</span> parent of ca46550
+      (update)
     </div>
   );
 };

@@ -2,12 +2,12 @@
 /** @type {import("pliny/config").PlinyConfig } */
 
 const siteMetadata = {
-  title: 'Campinapolis - Blog',
-  author: 'Carlos Eduardo',
-  fullName: 'Carlos Eduardo Gonçalves',
-  headerTitle: 'Campinapolis - Blog',
-  description: '',
-  language: 'pt-br',
+  title: "Karhdo's Coding Adventure",
+  author: 'Trong Khanh',
+  fullName: 'Do Trong Khanh',
+  headerTitle: "Karhdo's Blog",
+  description: 'My desire to practice my skills and share my acquired knowledge fuels my endeavors.',
+  language: 'en-us',
   theme: 'system',
   siteUrl: 'https://karhdo.dev',
   analyticsURL:
@@ -22,7 +22,7 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com/in/karhdo',
   twitter: 'https://twitter.com/karhdo',
   youtube: 'https://youtube.com',
-  locale: 'pt-BR',
+  locale: 'en-US',
   socialAccounts: {
     github: 'Karhdo',
     linkedin: 'karhdo',

@@ -1,9 +1,12 @@
 import { InferGetStaticPropsType } from 'next';
 import Snowfall from 'react-snowfall';
+
 import { formatDate } from 'pliny/utils/formatDate';
 import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer';
 import { allBlogs } from 'contentlayer/generated';
+
 import type { Blog } from 'contentlayer/generated';
+
 import siteMetadata from '@/data/siteMetadata';
 
 import Tag from '@/components/Tag';
@@ -26,6 +29,7 @@ const MAX_DISPLAY = 3;
 export const getStaticProps = async () => {
   const sortedPosts = sortedBlogPost(allBlogs) as Blog[];
   const posts = allCoreContent(sortedPosts);
+
   return { props: { posts } };
 };
 
@@ -75,7 +79,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 py-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-            Publicações Recentes
+            Recent Posts
           </h1>
           <p className="!mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.description}</p>
         </div>
